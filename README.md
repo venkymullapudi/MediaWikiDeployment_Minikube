@@ -5,7 +5,7 @@ Below is the design via which the code is deployed on Minikube
 
 ![MediaWiki Deployment Design](https://github.com/venkymullapudi/MediaWikiDeployment_TW/blob/master/Media_Wiki_Deployment.jpg?raw=true "Media Wiki Deployment")
 
-##Initial Setup of Ansible
+**Initial Setup of Ansible**
 
 - Prerequisites - Install Seprate CentOS 7 servers for Ansible, Kubernetes, Jenkins, DockerRegistry, Nginx Plus and Consul
 
