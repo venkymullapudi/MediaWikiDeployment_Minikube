@@ -17,7 +17,7 @@ CI and CD automation is done via Jenkins
 **Initial Setup of Ansible**
 
 **Prerequisites** 
-- I have used VirtualBox with CentOS 7 VMs for Ansible, Kubernetes, Jenkins, DockerRegistry and Nginx Plus
+- I have used VirtualBox with CentOS 7 VMs for Ansible, Kubernetes, Jenkins, DockerRegistry and Nginx 
 
 **Setup** 
 - Setup the Ansible host using the below commands
@@ -52,7 +52,7 @@ ansible 2.8.2
 jenkins.venky.corp
 dockerregistry.venky.corp
 consul.venky.corp
-nginxplus.venky.corp
+nginx.venky.corp
 kubernetes.venky.corp
 
 [venky@ansible ~]$ ssh-keygen
@@ -70,7 +70,7 @@ ansible.venky.corp | SUCCESS => {
     "changed": false,
     "ping": "pong"
 }
-nginxplus.venky.corp | SUCCESS => {
+nginx.venky.corp | SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python"
     },
