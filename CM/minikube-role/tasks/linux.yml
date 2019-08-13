@@ -1,0 +1,26 @@
+---
+
+- name: install the required packages
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ minikube_dependencies }}"
+
+- name: start services
+  service:
+    name: "{{ item }}"
+    state: restarted
+    enabled: yes
+  with_items:
+    - firewalld
+    - libvirtd
+
+- name: enable autostart for the default network
+  virt_net:
+    autostart: yes
+    name: default
+
+- name: start the default network
+  virt_net:
+    name: default
+    state: active
