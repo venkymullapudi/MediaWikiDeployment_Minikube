@@ -5,10 +5,11 @@ Below is the design via which the code is deployed on Minikube
 
 ![MediaWiki Deployment Design](https://github.com/venkymullapudi/MediaWikiDeployment_TW/blob/master/Media_Wiki_Deployment.jpg?raw=true "Media Wiki Deployment")
 
-#Initial Setup of Ansible
-Prerequisites - Install Seprate CentOS 7 servers for Ansible, Kubernetes, Jenkins, DockerRegistry, Nginx Plus and Consul
+##Initial Setup of Ansible
 
-Setup the Ansible host as below
+- Prerequisites - Install Seprate CentOS 7 servers for Ansible, Kubernetes, Jenkins, DockerRegistry, Nginx Plus and Consul
+
+- Setup the Ansible host as below
 ```
 $ ssh venky@ansible.venky.corp
 venky@ansible.venky.corp's password:
@@ -40,7 +41,7 @@ kubernetes.venky.corp
 [venky@ansible ~]$ ssh-copy-id venky@<HOSTNAME>
 ```
 
-Finally test it using the below command
+- Finally test it using the below command
 ```
 [venky@ansible ~]$ ansible -m ping all
 ansible.venky.corp | SUCCESS => {
