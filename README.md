@@ -1,15 +1,34 @@
-# MediaWikiDeployment_TW
-A repository containing the Media Wiki setup with CM, Dockerfiles, CI and CD scripts.
 
-Below is the design via which the code is deployed on Minikube
+# MediaWikiDeployment_TW
+This repository contains the Media Wiki setup with Asible as the Config Manager and the MediaWiki deployed on Minikube.
+CI and CD automation is done via Jenkins
+
+> Below is the design via which the code is deployed on Minikube
 
 ![MediaWiki Deployment Design](https://github.com/venkymullapudi/MediaWikiDeployment_TW/blob/master/Media_Wiki_Deployment.jpg?raw=true "Media Wiki Deployment")
 
+### The shortest path
+
+ 1. Create five "CentOS 7" VMs 
+ 2. Edit the MediaWiki_CM_CI_CD.var to update the hostnames of the 5 VMs
+ 3. Run the script MediaWiki_CM_CI_CD.sh
+
+### The Long Journey
 **Initial Setup of Ansible**
 
-- Prerequisites - Install Seprate CentOS 7 servers for Ansible, Kubernetes, Jenkins, DockerRegistry, Nginx Plus and Consul
+**Prerequisites** 
+- I have used VirtualBox with CentOS 7 VMs for Ansible, Kubernetes, Jenkins, DockerRegistry and Nginx Plus
 
-- Setup the Ansible host as below
+**Setup** 
+- Setup the Ansible host using the below commands
+
+> sudo yum install -y epel-release ansible 
+> ansible --version 
+> sudo vi /etc/ansible/hosts 
+> ssh-keygen 
+> ssh-copy-id venky@<HOSTNAME> 
+> ansible -m ping all
+
 ```
 $ ssh venky@ansible.venky.corp
 venky@ansible.venky.corp's password:
@@ -87,4 +106,9 @@ kubernetes.venky.corp | SUCCESS => {
     "ping": "pong"
 }
 ```
-You are now ready to Provision all the VMs with their softwares using Ansible as the configuration Management tool. The playbooks are added to CM directory in this repository.
+You are now ready to Provision the VMs with the respective tools using Ansible as the configuration Management tool. 
+
+The playbooks are added to CM directory in this repository.
+
+> *Next step... Go to CM folder and go to each folder, and follow the instructions*
+
