@@ -105,4 +105,4 @@ You are now ready to Provision the VMs with the respective tools using Ansible a
 The playbooks are added to CM directory in this repository.
 
 > *Next step... Go to CM folder and go to each folder, and follow the instructions*
-
+> *After which.. instructions under the CI, Dockerfiles and CD folders are needed to be followed respectively*
