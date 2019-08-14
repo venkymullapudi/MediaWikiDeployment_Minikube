@@ -5,5 +5,5 @@ Create a Username and Password, login with the Username. After the Nexus Docker 
 Go the Source Directory and then run the below command
 
 ```
-curl -v -u Username:Password --upload-file mediawiki-1.31.1.tar.gz http://dockerregistry.venky.corp:8081/repository/mediawiki/
+curl -v -u Username:Password --upload-file mediawiki-1.31.1.tar.gz http://nexus.venky.corp:8081/repository/mediawiki/
 ```
