@@ -12,7 +12,7 @@ Ansible's [virt\_net](http://docs.ansible.com/ansible/virt_net_module.html) modu
 
 Minikube requires `firewalld`, `libvirt` and `dnsmasq`.
 
-The actual packages are distribution dependent. They are installed by using the [package](http://docs.ansible.com/ansible/package_module.html) module from Ansible.
+The actual packages are distribution dependent. They are installed by using the [package](http://docs.ansible.com/ansible/package_module.html) module from Ansible.a
 
 
   * **minikube\_install\_dir** is the installation directory of the `minikube`, `kubectl`, `docker-machine` and `docker-machine-driver-kvm`. Defaults to `/usr/local/bin`.
@@ -49,7 +49,7 @@ If you want to change the installation directory:
         - { role: venky.minikube, minikube_install_dir: "/opt" }
 
 I have run it using the below command
-sudo ansible kubernetes.venky.corp -m include_role -a name="minikube-role" --ask-pass
+> sudo ansible kubernetes.venky.corp -m include_role -a name="minikube-role" --ask-pass
 
 The output is below
 ```
