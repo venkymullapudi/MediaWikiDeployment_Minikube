@@ -7,13 +7,7 @@ CI and CD automation is done via Jenkins
 
 ![MediaWiki Deployment Design](https://github.com/venkymullapudi/MediaWikiDeployment_TW/blob/master/Media_Wiki_Deployment.jpg?raw=true "Media Wiki Deployment")
 
-### The shortest path
-
- 1. Create five "CentOS 7" VMs 
- 2. Edit the MediaWiki_CM_CI_CD.var to update the hostnames of the 5 VMs
- 3. Run the script MediaWiki_CM_CI_CD.sh
-
-### The Long Journey
+### The Journey
 **Initial Setup of Ansible**
 
 **Prerequisites** 
