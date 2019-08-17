@@ -22,6 +22,10 @@ CI and CD automation is done via Jenkins
 > ssh-keygen 
 > ssh-copy-id venky@<HOSTNAME> 
 > ansible -m ping all
+  
+**Next Steps**
+> Go to CM folder and go to each folder, and follow the instructions
+> After which.. instructions under the CI, Dockerfiles and CD folders are needed to be followed respectively
 
 ```
 $ ssh venky@ansible.venky.corp
@@ -103,6 +107,3 @@ kubernetes.venky.corp | SUCCESS => {
 You are now ready to Provision the VMs with the respective tools using Ansible as the configuration Management tool. 
 
 The playbooks are added to CM directory in this repository.
-
-> *Next step... Go to CM folder and go to each folder, and follow the instructions*
-> *After which.. instructions under the CI, Dockerfiles and CD folders are needed to be followed respectively*
